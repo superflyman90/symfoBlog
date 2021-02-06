@@ -42,7 +42,7 @@ class AdminController extends AbstractController
             $em->persist($categorie);
             $em->flush();
 
-            return $this->redirectToRoute('app_home');
+            return $this->redirectToRoute('admin_home');
         }
 
 
