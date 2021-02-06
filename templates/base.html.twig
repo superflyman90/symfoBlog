@@ -2,12 +2,16 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}symfoBlog{% endblock %}</title>
+        {{ encore_entry_link_tags('app') }}
         {% block stylesheets %}{% endblock %}
 
         {% block javascripts %}{% endblock %}
     </head>
     <body>
+        
+        
+        {{ encore_entry_script_tags('app') }}
         {% block body %}{% endblock %}
     </body>
 </html>
